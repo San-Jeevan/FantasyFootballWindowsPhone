@@ -42,16 +42,13 @@ namespace FantasyFootball
             byte[] postData = Encoding.UTF8.GetBytes(postDataString);
             const string additionalHeaders = "Content-Type: application/x-www-form-urlencoded";
 
-            //minBrowser.Navigate(new Uri("https://users.premierleague.com/PremierUser/redirectLogin"), postData, additionalHeaders);
+            minBrowser.Navigate(new Uri("https://users.premierleague.com/PremierUser/redirectLogin"), postData, additionalHeaders);
 
 
 
         }
 
-        private void HTTPWebRequestCallBack(IAsyncResult ar)
-        {
-            throw new NotImplementedException();
-        }
+     
 
 
         //this is an alternative method of auto-logging in, it can be used if fantasy.premierleague guys find a way to block the current method
@@ -89,12 +86,12 @@ namespace FantasyFootball
         //}
         private void Settings_OnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         private void About_OnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
